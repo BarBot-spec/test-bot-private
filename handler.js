@@ -184,6 +184,7 @@ module.exports = {
               isBotAdmin,
               isPrems
             })
+            this.chatRead(m.chat)
             if (!isPrems) m.limit = m.limit || plugin.limit || false
           } catch (e) {
             // Error occured
