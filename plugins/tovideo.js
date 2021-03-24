@@ -5,10 +5,13 @@ let handler  = async (m, { conn, args }) => {
     let q = m.quoted ? m.quoted : m
       let img = await q.download()
       convert = await toVideo(img, 'webp')
+    } catch {
+    m.reply('Conversation failed')
+   }
 }
 handler.help = ['tovideo (reply stiker)']
 handler.tags = ['sticker']
-handler.command = /^(tovideo)?$/i
+handler.command = /^tovideo$/i
 
 module.exports = handler
 
