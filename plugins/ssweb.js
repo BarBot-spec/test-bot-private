@@ -1,5 +1,5 @@
 let fetch = require('node-fetch')
-let handler = async (m, { args, conn, command, args }) => {
+let handler = async (m, { args, conn, command }) => {
   ss = 'https://api.apiflash.com/v1/urltoimage?delay=1000&access_key=b3aa607e199e44d0892770166249f872&url=${args[0]}&quality=100&full_page=true'
   conn.sendFile(m.chat, ss, 'screenshot.png', 'screenshot web nya kak..', m)
 }
