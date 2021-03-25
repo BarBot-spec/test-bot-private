@@ -1,11 +1,7 @@
 let handler = async (m, { conn, args }) => {
-   try {
   if (args.length == 0) return m.reply('Linknya mana kak')
   xixi = await conn.joinvialink(args.join(' ').replace('https://chat.whatsapp.com/', ''))
-  conn.reply(xixi.gid `Hello i am Bot, I was invited by ${conn.getName(m.sender)}`, false)
-} catch {
-m.reply('Invalid Link')
-}
+  await conn.reply(xixi.gid, `Hello i am Bot, I was invited by ${conn.getName(m.sender)}`, false)
 }
 handler.help = ['join (link grup)']
 handler.tags = ['main']
