@@ -5,12 +5,12 @@ let handler  = async (m, { conn, args, usedPrefix, command }) => {
         case 'open':
          await conn.updatePresence(m.chat, Presence.composing)
          await conn.groupSettingChange(m.chat, GroupSettingChange.messageSend, false)
-         m.reply('```Sukses Membuka Grup```)
+         m.reply('```Sukses Membuka Grup```')
          break
          case 'close':
          await conn.updatePresence(m.chat, Presence.composing)
          await conn.groupSettingChange(m.chat, GroupSettingChange.messageSend, true)
-         m.reply('```Sukses Menutup Grup```)
+         m.reply('```Sukses Menutup Grup```')
          break
          default: 
         m.reply(`*Format salah! Contoh :*
