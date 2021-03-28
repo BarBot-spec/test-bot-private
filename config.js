@@ -1,6 +1,6 @@
-global.owner = ['6281215199447'] // Put your number here
-global.mods = ['6281215199447','628989031500'] // Want some help?
-global.prems = ['6281215199447','628989031500'] // Premium user has unlimited limit
+global.owner = ['6282198571732'] // Put your number here
+global.mods = ['628198571732','628989031500'] // Want some help?
+global.prems = ['6282198571732','628989031500'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -10,8 +10,8 @@ global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.xteam.xyz': 'a72abb5d0420ef3e'
 }
-global.packname = 'Caliph Bot\'s'
-global.author = 'Caliph'
+global.packname = 'NodeJs WhatsApp Bot'
+global.author = 'Ig @barxnl'
 
 
 
