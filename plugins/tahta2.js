@@ -12,7 +12,7 @@ await conn.sendFile(m.chat, global.API('xteam', '/tahta', { text, }, 'APIKEY'), 
 }
 handler.help = ['hartatahta'].map(v => v + '<teks>')
 handler.tags = ['nulis']
-handler.command = /^tahta2$/i
+handler.command = /^hartatahta$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
