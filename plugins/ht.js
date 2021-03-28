@@ -10,9 +10,9 @@ let handler = async (m, { conn, text }) => {
     delete conn.hartatahta[m.chat]
   }
 }
-handler.help = ['tahta <teks>']
+handler.help = ['none <teks>']
 handler.tags = ['nulis']
-handler.command = /^((harta)?tahta)$/i
+handler.command = /^((none)?tahta)$/i
 handler.limit = true
 
 module.exports = handler
